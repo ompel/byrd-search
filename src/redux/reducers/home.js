@@ -1,4 +1,4 @@
-import { DATE_RANGE_SELECTION, USER_SELECTION, SET_USERS } from "../actionTypes";
+import { DATE_RANGE_SELECTION, CUSTOMER_SELECTION, SET_CUSTOMERS } from "../actionTypes";
 
 const initialState = {
   dateRange: {
@@ -6,8 +6,8 @@ const initialState = {
     endDate: new Date(),
     key: "selection"
   },
-  selectedUser: {},
-  users: []
+  selectedCustomer: {},
+  customers: []
 };
 
 export default (state = initialState, action) => {
@@ -18,16 +18,16 @@ export default (state = initialState, action) => {
         dateRange: action.dateRange
       };
 
-    case USER_SELECTION:
+    case CUSTOMER_SELECTION:
       return {
         ...state,
-        selectedUser: action.selectedUser
+        selectedCustomer: action.selectedCustomer
       };
 
-      case SET_USERS:
+      case SET_CUSTOMERS:
       return {
         ...state,
-        users: action.users
+        customers: action.customers
       };
 
     default:

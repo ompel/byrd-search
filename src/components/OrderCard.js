@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   Card,
-  CardImg,
   CardHeader,
   CardBody,
   CardTitle,
@@ -9,7 +8,6 @@ import {
   CardFooter
 } from "reactstrap";
 import OrderItem from "./OrderItem";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./OrderCard.css";
 import moment from "moment";
 

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import OrderCard from "./OrderCard";
 // import NoResults from './NoResults';
 
@@ -20,13 +19,4 @@ class OrdersList extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  ordersList: state.orders.ordersForUser
-});
-
-const mapDispatchToProps = {};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(OrdersList);
+export default OrdersList;

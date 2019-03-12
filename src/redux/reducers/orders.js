@@ -1,15 +1,15 @@
-import { SET_ORDERS_FOR_USER } from "../actionTypes";
+import { SET_ORDERS_FOR_CUSTOMER } from "../actionTypes";
 
 const initialState = {
-  ordersForUser: []
+  ordersForCustomer: []
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_ORDERS_FOR_USER:
+    case SET_ORDERS_FOR_CUSTOMER:
     return {
       ...state,
-      ordersForUser: action.ordersForUser
+      ordersForCustomer: action.ordersForCustomer
     }
 
     default:
