@@ -99,7 +99,7 @@ class Orders extends Component {
                   dateFormat
                 )} Until: ${ordersUntil.format(
                   dateFormat
-                )} (${numberOfDays} Days), Total Sum: ${this.getCustomerTotalAmount()} `}</BreadcrumbItem>
+                )} (${numberOfDays} Days), ${this.props.list.length} Orders, Total Sum: ${this.getCustomerTotalAmount()} `}</BreadcrumbItem>
               </Breadcrumb>
             </div>
           </Navbar>
